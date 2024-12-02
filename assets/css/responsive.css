@@ -261,12 +261,22 @@
     .Hero p {
         padding-right: 20px;
     }
+
+    .Hero .BlurBG::before {
+        top: 0%;
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .Hero .row {
         flex-direction: column-reverse;
         row-gap: 30px;
+    }
+
+    .Hero .BlurBG::before {
+        display: none;
     }
 
     .Hero figure {
@@ -322,6 +332,11 @@
     .Intro p {
         text-align: center;
     }
+
+    .Contact .BlurBG::before {
+        width: 100%;
+        left: 50%;
+    }
 }
 
 /* ========= End of 1.3. Hero section ========= */
@@ -334,6 +349,14 @@
     .Skills .text-center {
         width: 80%;
         padding-bottom: 50px;
+    }
+
+    .Skills .BlurBG::before {
+        width: 100%;
+        height: 300px;
+        left: 20%;
+        filter: blur(140px);
+
     }
 
 }
@@ -353,6 +376,10 @@
 
     .Skills .EmptyProgress {
         height: 10px;
+    }
+
+    .Skills .BlurBG::before {
+        display: none;
     }
 
 }
@@ -435,6 +462,10 @@
     .Education .text-center {
         width: 100%;
     }
+
+    .Education .BlurBG::before {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -481,6 +512,11 @@
     .Contact input {
         font-size: 12px;
         padding: 14px;
+    }
+
+    .Contact .BlurBG::before {
+        width: 100%;
+        left: 50%;
     }
 }
 
@@ -538,6 +574,12 @@
     footer .mt-md-3 a {
         width: 100%;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    footer .social a {
+        font-size: 12px;
     }
 }
 

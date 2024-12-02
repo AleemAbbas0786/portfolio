@@ -111,7 +111,6 @@ section {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
   line-height: 1;
   background: #09203f;
 }
@@ -649,7 +648,36 @@ header aside li {
 /* ========= End of 1.1. header section ========= */
 /* ========= 1.2. Hero section ========= */
 .Hero {
-  padding: 70px 0px;
+  padding: 70px 0;
+  position: relative;
+}
+
+.Hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg/bg_pattern.png");
+  background-position: top top;
+  background-size: 50px auto;
+  opacity: 0.6;
+}
+
+.Hero .BlurBG::before {
+  content: '';
+  background: #0C7280;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(200px);
 }
 
 .Hero h2,
@@ -759,8 +787,39 @@ header aside li {
   width: 100%;
 }
 
+.Intro .BlurBG::before {
+  content: '';
+  background: #0C7280;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(200px);
+}
+
 /* ========= End of 1.3. Intro section ========= */
 /*========= 1.4. Skills section =========*/
+.Skills {
+  position: relative;
+}
+
+.Skills::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+  background: url("../images/bg/bg_pattern.png");
+  background-position: to top;
+  background-size: 50px auto;
+  opacity: 0.4;
+}
 
 .Skills h2 {
   color: #ffffff;
@@ -821,6 +880,20 @@ header aside li {
   font-family: "Playfair Display", serif;
 }
 
+.Skills .BlurBG::before {
+  content: '';
+  background: #0C7280;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(200px);
+}
+
 /*========= End of 1.4. Skills section =========*/
 /*========= 1.5. Slider section =========*/
 .Slider p {
@@ -855,6 +928,7 @@ header aside li {
   background: #3F0F4D;
   padding: 100px 0px;
 }
+
 
 .Exp figure {
   width: 100%;
@@ -939,6 +1013,7 @@ header aside li {
 
 .Projects a {
   color: #ffffff;
+  transition: all 0.3s ease-in;
 }
 
 .Projects a:hover {
@@ -947,6 +1022,38 @@ header aside li {
 
 /*========= End of 1.7. Projects section =========*/
 /*========= 1.8. Education section =========*/
+.Education {
+  position: relative;
+}
+
+.Education::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 50%;
+  background: url("../images/bg/bg_pattern.png");
+  background-position: to top;
+  background-size: 50px auto;
+  opacity: 0.4;
+}
+
+.Education .BlurBG::before {
+  content: '';
+  background: #0C7280;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(200px);
+}
+
 .Education h3 {
   color: #00FFFF;
   font-family: "Playfair Display", serif;
@@ -1026,6 +1133,38 @@ header aside li {
 
 /*========= End of 1.8. Education section =========*/
 /*========= 1.9. Contact section =========*/
+.Contact {
+  position: relative;
+}
+
+.Contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+  background: url("../images/bg/bg_pattern.png");
+  background-position: to top;
+  background-size: 50px auto;
+  opacity: 0.4;
+}
+
+.Contact .BlurBG::before {
+  content: '';
+  background: #0C7280;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(200px);
+}
+
 .Contact figure {
   width: 100%;
   animation: jump 2s ease-in-out infinite;
