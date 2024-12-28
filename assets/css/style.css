@@ -685,6 +685,10 @@ header aside li {
   color: #ffffff;
 }
 
+.Hero h1 strong {
+  color: #00FFFF;
+}
+
 .Hero figure {
   width: 100%;
   position: relative;
@@ -998,7 +1002,7 @@ header aside li {
 
 .Projects h4 {
   color: #ffffff;
-  padding-right: 50px;
+  padding-right: 35px;
   flex-grow: 1;
 }
 
@@ -1011,13 +1015,24 @@ header aside li {
   font-size: 18px;
 }
 
+.Projects a i,
 .Projects a {
   color: #ffffff;
+  font-size: 16px;
   transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
+
 
 .Projects a:hover {
   color: #00FFFF;
+}
+
+.Projects a:hover i {
+  color: #00FFFF;
+  transform: translateX(6px);
 }
 
 /*========= End of 1.7. Projects section =========*/
