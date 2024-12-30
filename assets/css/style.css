@@ -1246,17 +1246,24 @@ footer p {
   color: #ffffff;
 }
 
-footer .social a {
+footer .social a i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 14px;
   transition: all 0.5s ease-in;
 }
 
-footer .social a:hover {
+footer .social a i:hover {
   color: #00FFFF;
+  border-color: #00FFFF;
+  transform: translateY(-5px);
 }
 
 footer .text-center {

@@ -333,9 +333,8 @@
         text-align: center;
     }
 
-    .Contact .BlurBG::before {
+    .Intro .BlurBG::before {
         width: 100%;
-        left: 50%;
     }
 }
 
@@ -571,6 +570,10 @@
 
     footer .gap-md-3 {
         gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 }
 
