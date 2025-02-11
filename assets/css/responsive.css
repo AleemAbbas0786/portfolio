@@ -437,12 +437,17 @@
         padding-bottom: 30px;
     }
 
+    .Projects h4 {
+        padding-right: 0px;
+    }
+
 }
 
 @media screen and (max-width: 360px) {
     .Projects .proj {
         padding: 20px;
     }
+
 }
 
 /* ========= End of 1.7. Projects section ========= */
